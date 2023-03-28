@@ -1,4 +1,3 @@
 # DataStructure
-Data Structure Code
 
-new code
+这是研究生考试科目408的《数据结构》的代码，记录以供学习。
