@@ -1,6 +1,7 @@
+#include "BiTree.h"
 //循环队列：队列采取顺序存储
 #define MaxSize 50      //定义队列中元素的最大个数
-#define ElemType int
+#define ElemType BiTree
 
 //--------------------------------类型描述--------------------------------
 typedef struct{
@@ -16,7 +17,7 @@ void InitQueue(SqQueue &Q){
 }
 
 //判队满
-bool isFull(SqQueue Q){
+bool IsFull(SqQueue Q){
     if((Q.rear + 1) % MaxSize == Q.front){
         return true;
     }
@@ -24,7 +25,7 @@ bool isFull(SqQueue Q){
 }
 
 //判队空
-bool isEmpty(SqQueue Q){
+bool IsEmpty(SqQueue Q){
     if(Q.rear = Q.front){
         return true;
     }

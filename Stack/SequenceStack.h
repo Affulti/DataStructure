@@ -1,5 +1,6 @@
+#include "BiTree.h"
 //顺序栈：顺序存储的栈
-#define ElemType int
+#define ElemType BiTree
 
 //--------------------------------类型描述--------------------------------
 #define MaxSize 50          //定义栈中元素的最大个数
@@ -17,7 +18,7 @@ void InitStack(SqStack &S){
 }
 
 //栈判空
-bool StackEmpty(SqStack S){
+bool IsEmpty(SqStack S){
     //栈不空
     if(S.top != -1){
         return false;
